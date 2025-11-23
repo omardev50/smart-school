@@ -14,9 +14,9 @@ importers:
       preact:
         specifier: ^10.26.9
         version: 10.27.2
-      wouter:
+      wouter-preact:
         specifier: ^3.7.1
-        version: 3.7.1(react@19.2.0)
+        version: 3.7.1(preact@10.27.2)
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.10.2
@@ -1636,10 +1636,6 @@ packages:
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
 
-  react@19.2.0:
-    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
-    engines: {node: '>=0.10.0'}
-
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
@@ -1876,11 +1872,6 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  use-sync-external-store@1.6.0:
-    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
   vite-prerender-plugin@0.5.12:
     resolution: {integrity: sha512-EiwhbMn+flg14EysbLTmZSzq8NGTxhytgK3bf4aGRF1evWLGwZiHiUJ1KZDvbxgKbMf2pG6fJWGEa3UZXOnR1g==}
     peerDependencies:
@@ -2000,10 +1991,10 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  wouter@3.7.1:
-    resolution: {integrity: sha512-od5LGmndSUzntZkE2R5CHhoiJ7YMuTIbiXsa0Anytc2RATekgv4sfWRAxLEULBrp7ADzinWQw8g470lkT8+fOw==}
+  wouter-preact@3.7.1:
+    resolution: {integrity: sha512-fg8/AVx+O1U2orkGPjnSOSn7h3XQKuVAQ4bU9x8SvyqiDPHUhIQyLeu+cj9FCQSDRCbPOwPn/MmcfLahEU7EtQ==}
     peerDependencies:
-      react: '>=16.8.0'
+      preact: ^10.0.0
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -3817,8 +3808,6 @@ snapshots:
 
   react-is@17.0.2: {}
 
-  react@19.2.0: {}
-
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
@@ -4161,10 +4150,6 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  use-sync-external-store@1.6.0(react@19.2.0):
-    dependencies:
-      react: 19.2.0
-
   vite-prerender-plugin@0.5.12(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1)):
     dependencies:
       kolorist: 1.8.0
@@ -4283,12 +4268,11 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  wouter@3.7.1(react@19.2.0):
+  wouter-preact@3.7.1(preact@10.27.2):
     dependencies:
       mitt: 3.0.1
-      react: 19.2.0
+      preact: 10.27.2
       regexparam: 3.0.0
-      use-sync-external-store: 1.6.0(react@19.2.0)
 
   yallist@3.1.1: {}
 
