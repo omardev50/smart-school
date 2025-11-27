@@ -10,6 +10,7 @@ export default function DarkToggle() {
       onClick={toggleTheme}
       aria-passed={dark}
       aria-label="Toggle dark theme"
+      className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer border-0"
     >
       <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +18,7 @@ export default function DarkToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          class="size-6"
+          class="size-7"
         >
           <path
             strokeLinecap="round"
