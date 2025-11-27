@@ -1,5 +1,10 @@
 import { defineConfig } from 'unocss'
 
 export default defineConfig({
-  // ...UnoCSS options
+  theme: {
+    fontFamily: {
+      heading: ['Tajawal', 'sans-serif'],
+      body: ['IBM Plex Sans Arabic', 'sans-serif'],
+    },
+  },
 })
